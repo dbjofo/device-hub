@@ -1,0 +1,38 @@
+[package]
+name = "device-hub"
+version = "0.1.0"
+authors = ["Jonas Fornander <jonas.fornander@dinbox.se>"]
+
+
+[dependencies]
+tokio-tungstenite = "*"
+futures = "0.1.23"
+tokio-io = "0.1.7"
+
+[dependencies.tungstenite]
+version = "0.6.0"
+default-features = false
+
+[dependencies.bytes]
+optional = true
+version = "0.4.8"
+
+[dependencies.native-tls]
+optional = true
+version = "0.2.0"
+
+[dependencies.tokio-dns-unofficial]
+optional = true
+version = "0.3.1"
+
+[dependencies.tokio-tcp]
+optional = true
+version = "0.1.0"
+
+[dependencies.tokio-tls]
+optional = true
+version = "0.2.0"
+
+[dev-dependencies]
+tokio = "0.1.7"
+url = "1.6.0"
